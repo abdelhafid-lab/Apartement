@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appartement — Rue de Varenne, Paris 7e</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-line"></span>
+      <span class="logo-text">Résidence Varenne</span>
+      <span class="logo-line"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">L'appartement</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#details">Détails</a></li>
+      <li><a href="#contact" class="nav-cta">Contacter</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">L'appartement</a></li>
+      <li><a href="#gallery" class="mobile-link">Galerie</a></li>
+      <li><a href="#details" class="mobile-link">Détails</a></li>
+      <li><a href="#contact" class="mobile-link">Contacter</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-room"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Paris · 7ème Arrondissement</p>
+      <h1 class="hero-title reveal">
+        Un appartement<br />
+        <em>d'exception</em>
+      </h1>
+      <p class="hero-sub reveal">75 m² · 3 pièces · Haussmannien rénové</p>
+      <div class="hero-price reveal">
+        <span class="price-label">À partir de</span>
+        <span class="price-value">3 200 € <small>/ mois</small></span>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="#gallery" class="btn-primary">Découvrir</a>
+        <a href="#contact" class="btn-ghost">Planifier une visite</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-inner">
+        <span>Disponible</span>
+        <span>dès juin 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">75</span>
+      <span class="stat-unit">m²</span>
+      <span class="stat-label">Surface</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-unit">P</span>
+      <span class="stat-label">Pièces</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">4</span>
+      <span class="stat-unit">e</span>
+      <span class="stat-label">Étage</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">1912</span>
+      <span class="stat-unit"></span>
+      <span class="stat-label">Immeuble</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <p class="section-label">L'appartement</p>
+      <h2 class="section-title">
+        Le charme <em>haussmannien</em><br />
+        réinventé avec soin
+      </h2>
+      <p class="about-body">
+        Niché au 4ème étage d'un immeuble classé de 1912, cet appartement de 75 m² conjugue l'élégance du bâti ancien — moulures, parquet point de Hongrie, hauts plafonds — avec une rénovation contemporaine réalisée avec des matériaux nobles.
+      </p>
+      <p class="about-body">
+        Entièrement refait en 2023, il offre un salon lumineux de 32 m², une cuisine ouverte équipée, deux chambres dont une suite parentale, et une salle de bains en marbre de Carrare.
+      </p>
+      <ul class="about-features">
+        <li><span class="feat-icon">✦</span> Parquet chêne point de Hongrie</li>
+        <li><span class="feat-icon">✦</span> Moulures et corniches d'origine</li>
+        <li><span class="feat-icon">✦</span> Cuisine Siemens entièrement équipée</li>
+        <li><span class="feat-icon">✦</span> Double vitrage & isolation phonique</li>
+        <li><span class="feat-icon">✦</span> Cave & local vélos inclus</li>
+        <li><span class="feat-icon">✦</span> Digicode & interphone vidéo</li>
+      </ul>
+    </div>
+    <div class="about-visual">
+      <div class="about-img about-img-main">
+        <div class="room-visual salon"></div>
+        <div class="img-caption">Salon — 32 m²</div>
+      </div>
+      <div class="about-img about-img-secondary">
+        <div class="room-visual cuisine"></div>
+        <div class="img-caption">Cuisine ouverte</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <p class="section-label">Galerie</p>
+      <h2 class="section-title">Chaque pièce,<br /><em>un art de vivre</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item item-large" data-room="Salon">
+        <div class="room-visual salon"></div>
+        <div class="gallery-item-info">
+          <span class="room-name">Salon</span>
+          <span class="room-size">32 m²</span>
+        </div>
+      </div>
+      <div class="gallery-item item-tall" data-room="Suite parentale">
+        <div class="room-visual chambre1"></div>
+        <div class="gallery-item-info">
+          <span class="room-name">Suite parentale</span>
+          <span class="room-size">18 m²</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-room="Chambre">
+        <div class="room-visual chambre2"></div>
+        <div class="gallery-item-info">
+          <span class="room-name">Chambre</span>
+          <span class="room-size">12 m²</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-room="Cuisine">
+        <div class="room-visual cuisine"></div>
+        <div class="gallery-item-info">
+          <span class="room-name">Cuisine</span>
+          <span class="room-size">9 m²</span>
+        </div>
+      </div>
+      <div class="gallery-item item-wide" data-room="Salle de bains">
+        <div class="room-visual sdb"></div>
+        <div class="gallery-item-info">
+          <span class="room-name">Salle de bains</span>
+          <span class="room-size">8 m²</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details" id="details">
+    <div class="details-inner">
+      <div class="details-header">
+        <p class="section-label">Informations</p>
+        <h2 class="section-title">Tout ce qu'il<br /><em>faut savoir</em></h2>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>Loyer</h3>
+          <p class="detail-main">3 200 €</p>
+          <p class="detail-sub">Charges comprises (eau, entretien parties communes)</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>Dépôt de garantie</h3>
+          <p class="detail-main">6 400 €</p>
+          <p class="detail-sub">Équivalent à 2 mois de loyer</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>Surface</h3>
+          <p class="detail-main">75 m² Carrez</p>
+          <p class="detail-sub">+ cave 6 m² + local vélos</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>Disponibilité</h3>
+          <p class="detail-main">1er Juin 2025</p>
+          <p class="detail-sub">Bail 1 an renouvelable</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>DPE</h3>
+          <p class="detail-main">Classe C</p>
+          <p class="detail-sub">142 kWh/m²/an · Chauffage collectif gaz</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⬡</div>
+          <h3>Transports</h3>
+          <p class="detail-main">2 min à pied</p>
+          <p class="detail-sub">Métro Varenne (L13) · Bus 69, 87</p>
+        </div>
+      </div>
+      <div class="floor-plan">
+        <p class="section-label">Plan</p>
+        <div class="plan-visual">
+          <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" class="plan-svg">
+            <!-- Walls -->
+            <rect x="30" y="30" width="440" height="320" fill="none" stroke="var(--gold)" stroke-width="3" rx="2"/>
+            <!-- Internal walls -->
+            <line x1="230" y1="30" x2="230" y2="220" stroke="var(--gold)" stroke-width="2"/>
+            <line x1="230" y1="220" x2="30" y2="220" stroke="var(--gold)" stroke-width="2"/>
+            <line x1="350" y1="30" x2="350" y2="170" stroke="var(--gold)" stroke-width="2"/>
+            <line x1="350" y1="170" x2="470" y2="170" stroke="var(--gold)" stroke-width="2"/>
+            <line x1="350" y1="280" x2="470" y2="280" stroke="var(--gold)" stroke-width="2"/>
+            <!-- Doors -->
+            <path d="M230 90 Q260 90 260 120" fill="none" stroke="var(--cream)" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <path d="M350 230 Q320 230 320 260" fill="none" stroke="var(--cream)" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <!-- Room labels -->
+            <text x="120" y="130" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="13" font-weight="500">SALON</text>
+            <text x="120" y="148" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="10">32 m²</text>
+            <text x="290" y="100" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="11" font-weight="500">CHAMBRE 1</text>
+            <text x="290" y="116" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="10">18 m²</text>
+            <text x="410" y="100" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="11" font-weight="500">CHAMBRE 2</text>
+            <text x="410" y="116" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="10">12 m²</text>
+            <text x="120" y="285" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="11" font-weight="500">CUISINE</text>
+            <text x="120" y="300" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="10">9 m²</text>
+            <text x="410" y="220" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="11" font-weight="500">SALLE DE BAIN</text>
+            <text x="410" y="236" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="10">8 m²</text>
+            <text x="410" y="320" text-anchor="middle" fill="var(--cream)" font-family="DM Sans" font-size="11" font-weight="500">WC</text>
+            <!-- North indicator -->
+            <text x="460" y="50" text-anchor="middle" fill="var(--gold)" font-family="DM Sans" font-size="12">N</text>
+            <line x1="460" y1="55" x2="460" y2="68" stroke="var(--gold)" stroke-width="1.5"/>
+            <polygon points="460,55 456,65 464,65" fill="var(--gold)" opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location">
+    <div class="location-inner">
+      <div class="location-text">
+        <p class="section-label">Localisation</p>
+        <h2 class="section-title">Au cœur du<br /><em>7ème arrondissement</em></h2>
+        <p class="location-body">
+          La Rue de Varenne, artère haussmannienne emblématique, longe le Musée Rodin et se situe à cinq minutes à pied de la Tour Eiffel et du Champ-de-Mars. Le quartier allie calme résidentiel et vie culturelle d'exception.
+        </p>
+        <ul class="location-pois">
+          <li><span class="poi-dot"></span><strong>2 min</strong> — Métro Varenne (L13)</li>
+          <li><span class="poi-dot"></span><strong>5 min</strong> — Musée Rodin</li>
+          <li><span class="poi-dot"></span><strong>8 min</strong> — Tour Eiffel</li>
+          <li><span class="poi-dot"></span><strong>10 min</strong> — Bon Marché</li>
+          <li><span class="poi-dot"></span><strong>12 min</strong> — Saint-Germain-des-Prés</li>
+        </ul>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-pin">
+          <div class="pin-ring"></div>
+          <div class="pin-dot"></div>
+        </div>
+        <p class="map-label">Rue de Varenne, 75007 Paris</p>
+        <div class="map-grid">
+          <!-- Stylized map lines -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-header">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Planifier une<br /><em>visite privée</em></h2>
+        <p class="contact-sub">Notre équipe vous recontactera dans les 24h pour organiser une visite à votre convenance.</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" placeholder="Marie Dupont" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="marie@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="date">Date souhaitée</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="message">Message (optionnel)</label>
+          <textarea id="message" name="message" placeholder="Précisez vos disponibilités ou questions particulières..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <span class="btn-text">Envoyer ma demande</span>
+          <span class="btn-arrow">→</span>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <span class="success-icon">✓</span>
+          <p>Votre demande a bien été envoyée. Nous vous recontacterons sous 24h.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-line"></span>
+        <span class="logo-text">Résidence Varenne</span>
+        <span class="logo-line"></span>
+      </div>
+      <p class="footer-address">Rue de Varenne, 75007 Paris · France</p>
+      <p class="footer-copy">© 2025 Résidence Varenne. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
